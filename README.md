@@ -1,2 +1,2 @@
 # temporary
-Draft projects
+Draft projects only.
