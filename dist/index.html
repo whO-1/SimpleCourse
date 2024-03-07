@@ -265,12 +265,12 @@
                     <p class="text-muted">What my students have said about the book.</p>
                 </div>
                 <div class="row justify-content-center">
-                    <form class="col-12 col-md-8 col-lg-5" method="post" netlify> 
+                    <form class="col-12 col-md-8 col-lg-5" name="contact" method="post" netlify> 
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Email address</label>
                             <div class="input-group">
                                 <span class="input-group-text text-primary">@</span>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="e.g. name@example.com" required>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="e.g. name@example.com" required>
                             </div>
                             
                         </div>
@@ -278,7 +278,7 @@
                             <label for="exampleFormControlInput2" class="form-label">Name</label>
                             <div class="input-group">
                                 <span class="input-group-text"><i class="bi bi-person text-primary"></i></span>
-                                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="e.g. John Doe" required>
+                                <input type="text" class="form-control" id="exampleFormControlInput2" name="name" placeholder="e.g. John Doe" required>
                             </div>
                         </div>
 
@@ -286,7 +286,7 @@
                             <label for="exampleFormControlInput3" class="form-label">Question domain</label>
                             <div class="input-group">
                                 <span class="input-group-text" > <i class="bi bi-chat-left-dots text-primary"></i> </span>
-                                <select class="form-select" aria-label="Default select example" id="exampleFormControlInput3" required>
+                                <select class="form-select" aria-label="Default select example" name="domain" id="exampleFormControlInput3" required>
                                     <option selected disabled>Select question domain</option>
                                     <option value="1">Ask about pricing</option>
                                     <option value="2">Ask about content updated/releases</option>
@@ -295,7 +295,7 @@
                             </div>
                         </div>
                         <div class="form-floating ">
-                            <textarea class="form-control " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
+                            <textarea class="form-control " placeholder="Leave a comment here" id="floatingTextarea2" name="comment" style="height: 100px" required></textarea>
                             <label for="floatingTextarea2">Comments</label>
                         </div>
 
