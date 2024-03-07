@@ -1,3 +1,12 @@
+:root{
+    --bg-light: #ffffff;
+    --bg-accent-light: #772525;
+    --bg-accent1: #E25151;
+    --bg-accent1-hover: #EE7B7B;
+
+    --navbar-bg: #ffffff00;
+}
+
 header,main,footer{
     display: none;
 }
@@ -9,7 +18,7 @@ header,main,footer{
 body{   
     margin: 0;
     padding: 0;
-    background-color: rgb(236, 236, 236);
+    background-color: var(--bg-light);
 }
 
 
@@ -55,6 +64,60 @@ a{
 }
 
 .active-section {
-    color:rgb(45, 185, 14) !important;
+    color:var(--bg-accent1) !important;
 }
 
+.btn-accent{
+    background-color: var(--bg-accent1); 
+    color:white;   
+}
+
+.btn-accent:active{
+    background-color: var(--bg-accent1);
+    border: 1px solid var(--bg-accent1) !important; 
+    color:var(--bg-accent1) !important;   
+}
+
+.btn-accent:hover{
+    background-color: var(--bg-accent1-hover);    
+    color:white;
+}
+
+.text-primary{
+    color: var(--bg-accent1) !important;
+}
+
+.btn-outline-primary{
+    border: 1px solid var(--bg-accent1) !important; 
+    color:var(--bg-accent1) !important;
+}
+.btn-outline-primary:hover{
+    background-color: var(--bg-accent1);    
+    color:white !important;
+}
+
+.border-primary{
+    border: 1px solid var(--bg-accent1) !important
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--bg-accent-light);
+    color: var(--bg-light);
+    box-shadow: none;
+
+}
+
+.accordion-button:focus{
+    box-shadow: 0.2px 0px  1px var(--bg-light) !important;
+}
+
+.bg-light{
+    backdrop-filter: invert(80%) blur(2px) !important;
+    background-color: var(--navbar-bg) !important;
+}
+
+
+.menu-accent{
+    border: 2px solid white; 
+    color: white;     
+}
