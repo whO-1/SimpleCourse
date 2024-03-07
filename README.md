@@ -1,2 +1,2 @@
-# temporary
-Draft projects only.
+# SimpleCourse
+Simple Course Sell Page
